@@ -122,37 +122,37 @@
           <ul class="working-foto">
             <li class="li-foto">
               <div class="about-overlay-wrapper">
-              <img
-                src="./images/Work-for-computers.jpg"
-                alt="розробка за комп`ютером"
-                width="370"
-                height="294"
-              />
-              <p class="about-overlay">десктопні додатки</p>
+                <img
+                  src="./images/Work-for-computers.jpg"
+                  alt="розробка за комп`ютером"
+                  width="370"
+                  height="294"
+                />
+                <p class="about-overlay">десктопні додатки</p>
               </div>
             </li>
 
             <li class="li-foto">
               <div class="about-overlay-wrapper">
-              <img
-                src="./images/Working-on-a-laptop.jpg"
-                alt="розробка за ноутбуком"
-                width="370"
-                height="294"
-              />
-              <p class="about-overlay">мобільні додатки</p>
+                <img
+                  src="./images/Working-on-a-laptop.jpg"
+                  alt="розробка за ноутбуком"
+                  width="370"
+                  height="294"
+                />
+                <p class="about-overlay">мобільні додатки</p>
               </div>
             </li>
 
             <li class="li-foto">
               <div class="about-overlay-wrapper">
-              <img
-                src="./images/Working-on-a-tablet.jpg"
-                alt="розробка за планшетом"
-                width="370"
-                height="294"
-              />
-              <p class="about-overlay">дизайнерські рішення</p>
+                <img
+                  src="./images/Working-on-a-tablet.jpg"
+                  alt="розробка за планшетом"
+                  width="370"
+                  height="294"
+                />
+                <p class="about-overlay">дизайнерські рішення</p>
               </div>
             </li>
           </ul>
@@ -331,7 +331,7 @@
       </section>
       <section class="section section-client">
         <div class="container">
-        <h2 class="section-title">Постійні кліенти</h2>
+          <h2 class="section-title">Постійні кліенти</h2>
           <ul class="list-clients">
             <li class="list-clients-item">
               <a class="list-link-clients" href="#">
@@ -415,7 +415,7 @@
         </div>
       </section>
     </main>
-
+    <!--FOOTER-->
     <footer class="footer">
       <div class="container container-footer">
         <div class="footer-main-box">
@@ -428,7 +428,8 @@
                   href="https://goo.gl/maps/E31LjMS4C6WuwfjZA"
                   target="_blank"
                   rel="noopener nofollow noreferrer"
-                  >м. Київ, пр-т Лесі Українки, 26</a>
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
               </li>
               <li class="#">
                 <a class="address" href="mailto:info@example.com">info@example.com</a>
@@ -470,15 +471,80 @@
             </li>
           </ul>
         </div>
+        <div class="footer-third-box">
+          <p class="title-footer">Підпишіться на розсилку</p>
+          <form class="modal-footer">
+            <label class="label">
+              <input class="email-form" type="email" name="mail" placeholder="E-mail" />
+            </label>
+            <button type="submit" class="btn-footer">
+              Підписатися
+              <svg aria-label="іконка телеграму" class="icon-footer" width="24" height="24">
+                <use href="./images/sprite.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-     <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="18" height="18">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="form-group">
+          <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+          <label class="label-form"
+            >Ім'я
+            <div class="inputs">
+              <input class="input" type="text" name="username" />
+              <svg class="icon-form" width="18" height="18">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="label-form">
+            Телефон
+            <div class="inputs">
+              <input class="input" type="tel" name="telephone" /><svg
+                class="icon-form"
+                width="18"
+                height="18"
+              >
+                <use href="./images/sprite.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="label-form">
+            Пошта
+            <div class="inputs">
+              <input class="input" type="email" name="E-mail" /><svg
+                class="icon-form"
+                width="18"
+                height="18"
+              >
+                <use href="./images/sprite.svg#icon-konvert"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="label-form">
+            Коментар
+            <div class="inputs">
+              <textarea class="textarea" name="comment" placeholder="Введіть текст"></textarea>
+            </div>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" class="modal-form-check" name="info" checked />
+            <svg class="icon-checked" width="18" height="18">
+              <use class="icon-checked-icon" href="./images/sprite.svg#icon-check"></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю
+            <a class="modal-link" href="#">Умови договору</a>
+          </label>
+          <button class="btn-modal" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
