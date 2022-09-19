@@ -917,9 +917,10 @@ li {
   color: var(--secondary-color);
 }
 
-.label-form:last-child {
+.coments {
   margin-bottom: 20px;
 }
+
 
 .inputs {
   position: relative;
